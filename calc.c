@@ -1,5 +1,7 @@
 //Making a calculator app to add and subtract
 #include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
 int main()
 {
