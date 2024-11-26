@@ -1,20 +1,24 @@
-//Making a calculator app to add and subtract
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
+#include <stdio.h> 
 
-int main()
+int main(void)
 {
-    char obj;
-    double num1; double num2; double result;
+    char *oper;
+    double a;
+    double b;
 
-    printf("\n Please select an operation objective.\n |+| or |-|\n");
-    scanf("%c", &obj);
+    while (1)
+    {
+        printf("Please enter math Operator using (+ or -) only: ");
+        scanf("%s", *oper);
+        if (oper != "+", "-")
+        {
+            break;
+            printf("invalid");
+        }
 
-    printf("Enter number 1\n");
-    scanf("%lf", &num1);
+        if (oper == "+")
+        {
 
-    printf("Enter number 2\n");
-    scanf("%lf", &num2);
-    
+        }
+    }
 }
