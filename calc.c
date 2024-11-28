@@ -1,24 +1,27 @@
 #include <stdio.h> 
 
+char oper;
+double a, b; 
+
+
 int main(void)
 {
-    char *oper;
-    double a;
-    double b;
+    printf("Please enter math Operator.\n Addition with +\n Subtraction with -\n Multipling with *\n Dividing with /\n");
+    scanf("%c", &oper);
 
-    while (1)
+    printf("first number: ");
+    scanf("%lf", a);
+    printf("second number: ");
+    scanf("%lf", b);
+
+    if(oper != "+", "-", "*", "/")
     {
-        printf("Please enter math Operator using (+ or -) only: ");
-        scanf("%s", *oper);
-        if (oper != "+", "-")
-        {
-            break;
-            printf("invalid");
-        }
-
-        if (oper == "+")
-        {
-
-        }
+        printf("Invalid\n");
+        return 1;
     }
+    else if (oper == "+");
+    {
+        printf(&a + &b);
+    }
+    
 }
