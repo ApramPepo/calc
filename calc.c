@@ -10,13 +10,7 @@ int main(void)
     printf("Please enter math Operator.\n Addition with +\n Subtraction with -\n Multipling with *\n Dividing with /\n Square Root with S\n ");
     scanf("%c", &oper);
 
-//Adding square root
-
-
-
-// initiate error if another character chosen
 // make conditions for each operation
-
     
     if (oper == '+')
     {
@@ -58,6 +52,8 @@ int main(void)
         printf("%.2lf\n", c);
     }
 
+//Adding square root
+
     else if (oper == 'S', 's')
     {
         printf("Enter number: ");
@@ -65,6 +61,8 @@ int main(void)
         printf("The square root is: %.2lf\n", sqrt(a));
     }
     
+// initiate error if another character chosen
+
     else if (oper != '/', '+', '-', '*', 's', 'S')
     {
         printf("invalid\n");
