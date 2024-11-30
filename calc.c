@@ -10,29 +10,38 @@ int main(void)
     scanf("%c", &oper);
 
 // initiate error if another character chosen
+// make conditions for each operation
 
     printf("first number: ");
     scanf("%lf", &a);
     printf("second number: ");
     scanf("%lf", &b);
     
-    if (oper == '+');
+    if (oper == '+')
     {
         c = a + b;
-        printf("%lf", c);
-    } else if (oper == '-')
+        printf("%.2lf\n", c);
+    }
+
+    else if (oper == '-')
     {
         c = a - b;
-        printf("%lf", c);
-    } else if (oper == '*')
+        printf("%.2lf\n", c);
+    }
+
+    else if (oper == '*')
     {
         c = a * b;
-        printf("%lf", c);
-    } else if (oper == '/')
+        printf("%.2lf\n", c);
+    }
+    
+    else if (oper == '/')
     {
         c = a / b;
-        printf("%lf", c);
-    } else
+        printf("%.2lf\n", c);
+    }
+    
+    else if (oper != '/', '+', '-', '*')
     {
         printf("invalid\n");
         return 1;
