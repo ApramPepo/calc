@@ -1,6 +1,12 @@
 #include <math.h>
 #include <stdio.h> 
 
+#define Add (a, b) (a + b)
+#define Subtract (a, b) (a - b)
+#define Multiply (a, b) (a * b)
+#define Divide (a, b) (a / b)
+#define Root (a) (sqrt(a))
+
 char oper;
 double a, b, c; 
 
@@ -48,6 +54,12 @@ int main(void)
         scanf("%lf", &a);
         printf("second number: ");
         scanf("%lf", &b);
+        if (a, b == 0)
+        {
+            printf("Error: Division by zero is not allowed.\n");
+            return 1;
+        }
+        
         c = a / b;
         printf("%.2lf\n", c);
     }
